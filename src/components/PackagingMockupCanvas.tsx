@@ -73,31 +73,28 @@ export function PackagingMockupCanvas({
         <div className="flex gap-1 p-1 rounded-xl bg-[#F4F4F6] border border-[#E4E4E7]">
           <button
             onClick={() => setViewMode('3d')}
-            className={`px-3 py-1 rounded-lg text-[11px] font-semibold transition-all duration-200 ${
-              viewMode === '3d'
-                ? 'bg-[#09090B] text-white shadow-sm'
-                : 'text-[#71717A] hover:text-[#09090B]'
-            }`}
+            className={`px-3 py-1 rounded-lg text-[11px] font-semibold transition-all duration-200 ${viewMode === '3d'
+              ? 'bg-[#09090B] text-white shadow-sm'
+              : 'text-[#71717A] hover:text-[#09090B]'
+              }`}
           >
             Vista 3D
           </button>
           <button
             onClick={() => setViewMode('front')}
-            className={`px-3 py-1 rounded-lg text-[11px] font-semibold transition-all duration-200 ${
-              viewMode === 'front'
-                ? 'bg-[#09090B] text-white shadow-sm'
-                : 'text-[#71717A] hover:text-[#09090B]'
-            }`}
+            className={`px-3 py-1 rounded-lg text-[11px] font-semibold transition-all duration-200 ${viewMode === 'front'
+              ? 'bg-[#09090B] text-white shadow-sm'
+              : 'text-[#71717A] hover:text-[#09090B]'
+              }`}
           >
             Frontal
           </button>
           <button
             onClick={() => setViewMode('gusset')}
-            className={`px-3 py-1 rounded-lg text-[11px] font-semibold transition-all duration-200 ${
-              viewMode === 'gusset'
-                ? 'bg-[#09090B] text-white shadow-sm'
-                : 'text-[#71717A] hover:text-[#09090B]'
-            }`}
+            className={`px-3 py-1 rounded-lg text-[11px] font-semibold transition-all duration-200 ${viewMode === 'gusset'
+              ? 'bg-[#09090B] text-white shadow-sm'
+              : 'text-[#71717A] hover:text-[#09090B]'
+              }`}
           >
             Fuelle
           </button>
@@ -175,7 +172,6 @@ export function PackagingMockupCanvas({
                         : 'none',
                     }}
                   >
-                    LUXPACK
                   </div>
                   <div className="text-[9px] uppercase tracking-[0.25em] text-[#D4AF37] font-semibold border-t border-b border-[#D4AF37]/40 py-0.5">
                     Haute Couture Packaging

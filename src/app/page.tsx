@@ -32,7 +32,7 @@ export default function Home() {
     }, 100);
   };
 
-  const handleSaveQuote = (quote: QuoteCalculationResult) => {
+  const handleSaveQuote = (_quote: QuoteCalculationResult) => {
     setSavedQuotesCount(prev => prev + 1);
   };
 

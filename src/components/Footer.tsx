@@ -3,7 +3,6 @@
 import Image from 'next/image';
 
 export function Footer() {
-  const year = new Date().getFullYear();
 
   return (
     <footer className="bg-[#09090B] text-white pt-16 pb-8 border-t border-[#D4AF37]/15">

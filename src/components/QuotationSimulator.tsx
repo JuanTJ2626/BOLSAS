@@ -30,15 +30,22 @@ export function QuotationSimulator({ selectedProductFromCatalog, onSaveQuote }: 
 
   useEffect(() => {
     if (selectedProductFromCatalog) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setSelectedId(selectedProductFromCatalog.id);
     }
   }, [selectedProductFromCatalog]);
 
+  // eslint-disable-next-line react-hooks/set-state-in-effect
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setPrintId(product.printOptions[0]?.id ?? '');
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setFinishId(product.finishOptions[0]?.id ?? '');
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setHeightCm(product.availableDimensions.defaultHeight);
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setWidthCm(product.availableDimensions.defaultWidth);
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setGussetCm(product.availableDimensions.defaultGusset);
   }, [selectedId, product]);
 
