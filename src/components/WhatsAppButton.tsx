@@ -1,9 +1,16 @@
 'use client';
 
+import { useEffect, useState } from 'react';
+
 export function WhatsAppButton() {
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => setMounted(true), []);
+
   const phone = '521XXXXXXXXXX'; // ← reemplaza con tu número
   const message = encodeURIComponent('Hola, me interesa cotizar empaques de lujo.');
   const href = `https://wa.me/${phone}?text=${message}`;
+
+  if (!mounted) return null;
 
   return (
     <a
