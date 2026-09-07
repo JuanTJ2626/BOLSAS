@@ -13,6 +13,7 @@ import { EcoComparisonTable } from '@/components/EcoComparisonTable';
 import { TrustBadges } from '@/components/TrustBadges';
 import { Footer } from '@/components/Footer';
 import { ProductModal } from '@/components/ProductModal';
+import { WhatsAppButton } from '@/components/WhatsAppButton';
 
 export default function Home() {
   const [modalProduct, setModalProduct] = useState<Product | null>(null);
@@ -79,6 +80,9 @@ export default function Home() {
         onClose={() => setModalProduct(null)}
         onSelectForQuote={handleSelectForQuote}
       />
+
+      {/* ── WhatsApp Floating Button ────────────────────────────── */}
+      <WhatsAppButton />
     </main>
   );
 }
